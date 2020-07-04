@@ -1,8 +1,8 @@
 <?php
-  $link = mysqli_connect('localhost', 'root', '', 'rs_kdcw');
+  require '../../koneksi.php';
   session_start();
   if($_SESSION['login'] != true){
-    header('location:../../login.php');
+    header('location:../../index.php');
   }
 ?>
 

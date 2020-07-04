@@ -1,9 +1,9 @@
 <?php
 
-  $link = mysqli_connect('localhost', 'root', '', 'rs_kdcw') or die(mysqli_error());
+require '../../koneksi.php';
   session_start();
   if($_SESSION['login'] != true){
-    header('location:../../login.php');
+    header('location:../../index.php');
   }
 
   $id = $_GET["kode_dokter"];
