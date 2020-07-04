@@ -1,10 +1,6 @@
 <?php
 error_reporting(0);
-$host     = 'localhost';
-$user     = 'root';
-$password = '';
-$db       = 'rs_kdcw';
-$link = mysqli_connect($host, $user, $password, $db);
+require 'koneksi.php';
 
 session_start();
 

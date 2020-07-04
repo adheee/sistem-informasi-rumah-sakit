@@ -1,14 +1,8 @@
 <?php
-
-$host     = 'localhost';
-$user     = 'root';
-$password = '';
-$db       = 'rs_kdcw';
-$link = mysqli_connect($host, $user, $password, $db);
-
+require 'koneksi.php';
 session_start();
 if($_SESSION['login'] != true){
-  header('location:login.php');
+  header('location:index.php');
 }
 
 ?>
